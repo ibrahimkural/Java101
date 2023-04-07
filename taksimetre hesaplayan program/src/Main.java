@@ -25,10 +25,10 @@ public class Main {
         total += startPrice ;
 
         total = (total < 20) ? 20 : total;
-        System.out.println("Topalam Tutar :"+ total);
+        System.out.println("Toplam Tutar :"+ total);
 
 
     }
-    }
+
 
 }
