@@ -14,22 +14,19 @@ public class Main {
          */
 
         Scanner scanner = new Scanner(System.in);
+        int km;
+        double perKm = 2.20, total , startPrice = 10;
 
-        double km;
-        double pricePerKm = 2.20;
-        double kmToPrice;
-        int minPrice = 20;
-        int taximeterStartPrice = 10;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Mesafeyi KM cinsinden giriniz : ");
+        km = input.nextInt();
 
-        System.out.println("Please enter the kilometer: ");
-        km = scanner.nextDouble();
+        total = (km * perKm);
+        total += startPrice ;
 
-        kmToPrice = (km * pricePerKm) + taximeterStartPrice;
+        total = (total < 20) ? 20 : total;
+        System.out.println("Topalam Tutar :"+ total);
 
-        if(kmToPrice < 20){
-            System.out.println("Taximeter: " + minPrice);
-        }else{
-            System.out.println("Taximeter: " + kmToPrice);
 
     }
     }
