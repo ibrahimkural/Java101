@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double a, e, d_, m, p, toplam;
+        double a, e, d, m, p, toplam;
         Scanner input = new Scanner(System.in);
         System.out.print("Armut Kac Kilo : ");
         a = input.nextDouble();
