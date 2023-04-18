@@ -1,2 +1,0 @@
-# Java101
-Projects
