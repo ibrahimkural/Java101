@@ -1,22 +1,58 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int math, physics, turkish, chemistry, music, total;
+        double math, physics, turkish, chemistry, music, total=0;
+
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter your math score");
+        System.out.println("Enter your math score: ");
         math=input.nextInt();
-        System.out.println("Enter your physics score");
+        if ((math<0)||(math>100)) {
+            System.out.println("invalid number");
+        }
+        else {
+            total += math;
+        }
+        System.out.println("Enter your physics score: ");
         physics=input.nextInt();
-        System.out.println("Enter your turkish score");
+        if ((physics<0)||(physics>100)) {
+            System.out.println("invalid number");
+        }
+        else {
+            total += physics;
+        }
+        System.out.println("Enter your turkish score: ");
         turkish=input.nextInt();
-        System.out.println("Enter your chemistry score");
+        if ((turkish<0)||(turkish>100)) {
+            System.out.println("invalid number");
+        }
+        else {
+            total += turkish;
+        }
+        System.out.println("Enter your chemistry score: ");
         chemistry=input.nextInt();
-        System.out.println("Enter your music score");
+        if ((chemistry<0)||(chemistry>100)) {
+            System.out.println("invalid number");
+        }
+        else {
+            total += chemistry;
+        }
+        System.out.println("Enter your music score: ");
         music=input.nextInt();
+        if ((music<0)||(music>100)) {
+            System.out.println("invalid number");
+        }
+        else {
+            total += music;
+        }
+        double isPass=total/5;
+        System.out.println("your Score " + isPass);
 
-        System.out.println("Congrats you past");
-
-
+        if (isPass>=55) {
+            System.out.println("Congrats you past");
+        }
+        else {
+            System.out.println("Unfortunately you failed");
+        }
     }
 }
